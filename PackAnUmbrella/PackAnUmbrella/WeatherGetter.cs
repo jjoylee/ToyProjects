@@ -10,25 +10,25 @@ namespace PackAnUmbrella
     {
         public string Get()
         {
-            var url = GetApiUrl();
-            return GetWeather(url);
+            var weatherInfo = GetWeatherInfo();
+            return weatherInfo.Weather[0].Main;
+        }
+
+        private WeatherInfo GetWeatherInfo()
+        {
+            var weatherInfo = new WeatherInfo();
+            using (var client = new WebClient())
+            {
+                var response = client.DownloadString(GetApiUrl());
+                weatherInfo = (new JavaScriptSerializer()).Deserialize<WeatherInfo>(response);
+            }
+            return weatherInfo;
         }
 
         private string GetApiUrl()
         {
             var appid = "4d3414faf83a3ad6169e9e93db052e3a";
             return $"http://api.openweathermap.org/data/2.5/weather?q=Seoul&appid={appid}";
-        }
-
-        private string GetWeather(string url)
-        {
-            var weatherInfo = new WeatherInfo();
-            using (var client = new WebClient())
-            {
-                var response = client.DownloadString(url);
-                weatherInfo = (new JavaScriptSerializer()).Deserialize<WeatherInfo>(response);
-            }
-            return weatherInfo.Weather[0].Main;
         }
     }
 }
