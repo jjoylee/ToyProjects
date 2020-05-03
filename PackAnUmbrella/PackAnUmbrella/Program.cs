@@ -10,6 +10,7 @@ namespace PackAnUmbrella
     {
         static void Main(string[] args)
         {
+            new PackAnUmbrealla().Run();
         }
     }
 }

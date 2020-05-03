@@ -1,1 +1,6 @@
 C:\dev\ToyProjects\PackAnUmbrella\PackAnUmbrella\bin\Debug\PackAnUmbrella.exe.config
+C:\dev\ToyProjects\PackAnUmbrella\PackAnUmbrella\obj\Debug\PackAnUmbrella.csprojResolveAssemblyReference.cache
+C:\dev\ToyProjects\PackAnUmbrella\PackAnUmbrella\bin\Debug\PackAnUmbrella.exe
+C:\dev\ToyProjects\PackAnUmbrella\PackAnUmbrella\bin\Debug\PackAnUmbrella.pdb
+C:\dev\ToyProjects\PackAnUmbrella\PackAnUmbrella\obj\Debug\PackAnUmbrella.exe
+C:\dev\ToyProjects\PackAnUmbrella\PackAnUmbrella\obj\Debug\PackAnUmbrella.pdb
