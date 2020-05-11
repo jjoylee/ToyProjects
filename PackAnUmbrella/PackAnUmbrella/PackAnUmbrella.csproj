@@ -47,6 +47,8 @@
     <Compile Include="LineNotifyGetter.cs" />
     <Compile Include="Model\Weather.cs" />
     <Compile Include="Model\WeatherInfo.cs" />
+    <Compile Include="NotifyItem.cs" />
+    <Compile Include="NotifyItemGetter.cs" />
     <Compile Include="PackAnUmbrealla.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
