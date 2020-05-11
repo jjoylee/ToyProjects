@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LineNotifyGetter.cs" />
     <Compile Include="Model\Weather.cs" />
     <Compile Include="Model\WeatherInfo.cs" />
     <Compile Include="PackAnUmbrealla.cs" />
